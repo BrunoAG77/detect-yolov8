@@ -32,3 +32,14 @@ Demonstrar na prática a aplicação de inteligência artificial em visão compu
 ⚠️ Este projeto é desenvolvido em Python.
 
 A execução deve ser feita diretamente pelo terminal.
+
+Referencias: 
+https://www.youtube.com/watch?v=O9Jbdy5xOow
+
+https://dipankarmedh1.medium.com/real-time-object-detection-with-yolo-and-webcam-enhancing-your-computer-vision-skills-861b97c78993
+
+https://github.com/codershiyar/object-detection-using-webcam
+
+https://www.youtube.com/watch?v=YKbBXWBJloY
+
+https://docs.ultralytics.com/modes/predict/#real-world-applications
