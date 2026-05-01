@@ -17,14 +17,8 @@ Captura de imagem da câmera -> Processamento com o modelo YOLOv8 -> Identifica�
 ```
 detect-yolov8/
 ├── models/
-│   ├── yolov8n.pr
+│   ├── yolov8n.pt
 ├── src/
-│   ├── __pycache__/
-│   ├── ├── __init__.cpython-314.pyc
-│   ├── ├── camera.cpython-314.pyc
-│   ├── ├── config.cpython-314.pyc
-│   ├── ├── detector.cpython-314.pyc
-│   ├── ├── visualizer.cpython-314.pyc
 │   ├── __init__.py
 │   ├── camera.py
 │   ├── config.py
