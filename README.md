@@ -1,4 +1,5 @@
- YOLOv8 Real-Time Object Detection
+Detecção de objetos com YOLOv8
+
 Este projeto implementa um sistema de detecção de objetos em tempo real utilizando visão computacional e o modelo YOLOv8 (You Only Look Once).
 A aplicação captura frames da webcam, processa cada imagem com um modelo de deep learning e exibe os objetos detectados com bounding boxes e labels diretamente na tela.
 
