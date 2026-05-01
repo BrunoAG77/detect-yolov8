@@ -13,6 +13,27 @@ A aplicação captura frames da webcam, processa cada imagem com um modelo de de
 ## Fluxo do sistema
 Captura de imagem da câmera -> Processamento com o modelo YOLOv8 -> Identificação de objetos e suas localizações -> Renderização dos resultados na tela
 
+## Estrutura do projeto 
+```
+detect-yolov8/
+├── models/
+│   ├── yolov8n.pr
+├── src/
+│   ├── __pycache__/
+│   ├── ├── __init__.cpython-314.pyc
+│   ├── ├── camera.cpython-314.pyc
+│   ├── ├── config.cpython-314.pyc
+│   ├── ├── detector.cpython-314.pyc
+│   ├── ├── visualizer.cpython-314.pyc
+│   ├── __init__.py
+│   ├── camera.py
+│   ├── config.py
+│   ├── detector.py
+│   ├── visualizer.py
+├── README.md
+├── main.py
+```
+
 ## Arquitetura modular
 ### Camera
 A câmera é responsável por acessar a webcam e capturar frames, usando `cv2.VideoCapture()`. O erro já é tratado se não conseguir ler a imagem.
