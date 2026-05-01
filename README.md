@@ -26,6 +26,7 @@ detect-yolov8/
 │   ├── visualizer.py
 ├── README.md
 ├── main.py
+├── requirements.txt
 ```
 
 ## Arquitetura modular
@@ -166,10 +167,8 @@ Windows: ```venv\Scripts\activate```
 
 Linux/Mac: ```source venv/bin/activate```
 
-### Instalação das bibliotecas, se necessário
-```pip install opencv-python```
-
-```pip install ultralytics```
+### Instalação das bibliotecas
+```pip install -r requirements.txt```
 
 ### Execução do projeto
 ```python main.py```
