@@ -138,7 +138,7 @@ if __name__ == "__main__":
 ## Tutorial
 A execução deve ser feita diretamente pelo terminal.
 
-### Criação do ambiente virtual: 
+### Criação do ambiente virtual
 ```python -m venv venv```
 
 ### Ativação do ambiente virtual
