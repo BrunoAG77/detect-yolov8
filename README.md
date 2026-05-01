@@ -140,6 +140,7 @@ A execução deve ser feita diretamente pelo terminal.
 
 ### Clonagem do repositório
 ```git clone https://github.com/BrunoAG77/detect-yolov8```
+
 ```cd detect-yolov8```
 
 ### Criação do ambiente virtual
@@ -147,10 +148,12 @@ A execução deve ser feita diretamente pelo terminal.
 
 ### Ativação do ambiente virtual
 Windows: ```venv\Scripts\activate```
+
 Linux/Mac: ```source venv/bin/activate```
 
 ### Instalação das bibliotecas, se necessário
 ```pip install opencv-python```
+
 ```pip install ultralytics```
 
 ### Execução do projeto
