@@ -3,12 +3,15 @@
 Este projeto implementa um sistema de detecção de objetos em tempo real utilizando visão computacional e o modelo YOLOv8 (You Only Look Once).
 A aplicação captura frames da webcam, processa cada imagem com um modelo de deep learning e exibe os objetos detectados com bounding boxes e labels diretamente na tela. O foco do projeto é demonstrar na prática a aplicação de inteligência artificial em visão computacional, com foco em desempenho e organização de código.
 
-## Principais Features 
+## Principais Funcionalidades
 - Detecção de objetos em tempo real via webcam
 - Arquitetura modular (Camera, Detector, Visualizer, Config)
 - Uso do YOLOv8 com a biblioteca Ultralytics
 - Configuração simples e adaptável (confiança, device, classes)
 - Interface leve com OpenCV
+
+## Fluxo do sistema
+Captura de imagem da câmera -> Processamento com o modelo YOLOv8 -> Identificação de objetos e suas localizações -> Renderização dos resultados na tela
 
 ## Arquitetura modular
 ### Camera
@@ -38,7 +41,7 @@ class Camera:
 ```
 
 ### Detector
-No detector, o YOLO já consegue detectar tudo sendo carregado uma única vez, rodando a predição frame por frame. O detector também configura a confiança (GPU) e o dispositivo (CPU), retornando somente o primeiro resultado.
+No detector, o YOLO já consegue detectar tudo sendo carregado uma única vez, rodando a predição frame por frame. O detector também configura o nível de confiança e o dispositivo (CPU e GPU), retornando somente o primeiro resultado.
 ```
 from ultralytics import YOLO
 from .config import Config
@@ -79,7 +82,7 @@ class Visualizer:
 ```
 
 ### Config
-Centralização de todas as configurações, incluindo o caminho do modelo, confiança (GPU), dispositivo (CPU), câmera e as classes de objetos.
+Centralização de todas as configurações, incluindo o caminho do modelo, nível confiança, dispositivo (CPU e GPU), câmera e as classes de objetos.
 ```
 from dataclasses import dataclass, field
 
@@ -126,20 +129,31 @@ if __name__ == "__main__":
     main()
 ```
 
-## Fluxo do sistema
-Captura de imagem da câmera -> Processamento com o modelo YOLOv8 -> Identificação de objetos e suas localizações -> Renderização dos resultados na tela
-
 ## Tecnologias utilizadas
 - Python
 - OpenCV
 - Ultralytics YOLOv8
-- Virtual Environment (venv)
+- Ambiente Virtual/Virtual Environment (venv)
 
-## Exemplo de uso
-- Execute o projeto e visualize detecções em tempo real diretamente pela webcam.
-- Pressione "Q" para encerrar a aplicação.
-
+## Tutorial
 A execução deve ser feita diretamente pelo terminal.
+
+### Criação do ambiente virtual: 
+```python -m venv venv```
+
+### Ativação do ambiente virtual
+Windows: ```venv\Scripts\activate```
+Linux/Mac: ```source venv/bin/activate```
+
+### Instalação das bibliotecas, se necessário
+```pip install opencv-python```
+```pip install ultralytics```
+
+### Execução do projeto
+```python main.py```
+
+### Encerramento do projeto
+Pressione "Q" para encerrar a aplicação.
 
 ## Referencias: 
 https://www.youtube.com/watch?v=O9Jbdy5xOow
