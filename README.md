@@ -138,6 +138,10 @@ if __name__ == "__main__":
 ## Tutorial
 A execução deve ser feita diretamente pelo terminal.
 
+### Clonagem do repositório
+```git clone https://github.com/BrunoAG77/detect-yolov8```
+```cd detect-yolov8```
+
 ### Criação do ambiente virtual
 ```python -m venv venv```
 
